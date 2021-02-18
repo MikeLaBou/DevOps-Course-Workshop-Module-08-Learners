@@ -38,8 +38,8 @@ jobs:
 
     - name: Pushes to Docker Hub
     - uses: docker/build-push-actions@v1
-        with:
+      with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: my-docker-hub-namespace/my-docker-hub-repository
+          repository: mickyb0y/dotnettemplate
           tag_with_ref: true
